@@ -12,7 +12,7 @@ var express = require('express')
 
 var app = express();
 
-mongoose.connect('localhost/cats');
+mongoose.connect(process.env.MONGOHQ_URL || 'mongodb://heroku_app11372496:h52da4er53651s8m2ojg7e4459@ds035147.mongolab.com:35147/heroku_app11372496');
 
 app.configure(function(){
   app.set('port', process.env.PORT || 3000);
