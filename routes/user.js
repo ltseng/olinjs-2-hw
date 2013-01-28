@@ -31,8 +31,8 @@ exports.newCat = function(req, res){
 		console.log('saving');
   });
 	
-  //res.send("Your cat's name is " + cat_name + ", is age " + cat_age +
-  //	", and is " + cat_color + " in color.");
+  res.send("Your cat's name is " + cat_name + ", is age " + cat_age +
+  	", and is " + cat_color + " in color.");
 
 };
 
